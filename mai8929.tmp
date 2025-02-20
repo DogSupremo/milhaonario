@@ -1,0 +1,1251 @@
+[gd_scene load_steps=6 format=3 uid="uid://5qdy1v3qbjic"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_lku3k"]
+[ext_resource type="PackedScene" uid="uid://c6c1pvj3qtccm" path="res://tile_map.tscn" id="1_mcefc"]
+[ext_resource type="Texture2D" uid="uid://blnc4wsms8t5p" path="res://Ilustração58 2.png" id="3_22715"]
+[ext_resource type="Texture2D" uid="uid://bvsevrcqd1clp" path="res://2d_dummy_sprite_by_retronc_di9bip6-fullview.png" id="5_5uc73"]
+[ext_resource type="Script" path="res://window.gd" id="5_uw67m"]
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_lku3k")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(128, 29)
+zoom = Vector2(3.175, 3.175)
+
+[node name="TileMap" parent="." instance=ExtResource("1_mcefc")]
+texture_filter = 1
+layer_0/tile_data = PackedInt32Array(65538, 262144, 0, 65539, 262144, 0, 65540, 262144, 0, -262144, 262144, 0, -196608, 262144, 0, -131072, 262144, 0, -196607, 262144, 0, -327680, 262144, 0, -65535, 262144, 0, -131071, 262144, 0, -65536, 262144, 0, 0, 262144, 0, 65537, 262144, 0, 1, 262144, 0, 65543, 262144, 0, 65542, 262144, 0, 65541, 262144, 0, 8, 262144, 0, -65528, 262144, 0, -131064, 262144, 0, -196600, 262144, 0, -262136, 262144, 0, -327672, 262144, 0, -393209, 262144, 0, -393210, 262144, 0, -393211, 262144, 0, -393212, 262144, 0, -393213, 262144, 0, -393214, 262144, 0, -262143, 262144, 0, -327679, 262144, 0, -393215, 262144, 0, 65544, 327680, 0, 65536, 262144, 0, -393216, 262144, 0, -393208, 262144, 0, 131080, 327680, 0, 131081, 327680, 0, 65545, 327680, 0, 131079, 262144, 0, 131078, 262144, 0, 131077, 262144, 0, 131076, 262144, 0, 131075, 262144, 0, 131074, 262144, 0, 131073, 262144, 0, 131072, 262144, 0, -458752, 262144, 0, -458751, 262144, 0, -458750, 262144, 0, -458749, 262144, 0, -458748, 262144, 0, -458747, 262144, 0, -458746, 262144, 0, -458745, 262144, 0, -458744, 262144, 0, -458743, 262144, 0, -393207, 262144, 0, -327671, 262144, 0, -262135, 262144, 0, -196599, 262144, 0, -131063, 262144, 0, -65527, 262144, 0, 9, 262144, 0)
+
+[node name="Map" type="Sprite2D" parent="."]
+position = Vector2(122.51, 37.18)
+scale = Vector2(0.085, 0.085)
+texture = ExtResource("3_22715")
+
+[node name="2" type="CanvasGroup" parent="Map"]
+
+[node name="R3 L1" type="Label" parent="Map/2"]
+offset_left = -1535.41
+offset_top = -413.882
+offset_right = -1076.41
+offset_bottom = -288.882
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "R3 L1"
+horizontal_alignment = 1
+
+[node name="R3 L2" type="Label" parent="Map/2"]
+offset_left = -1335.41
+offset_top = -519.765
+offset_right = -876.412
+offset_bottom = -394.765
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "R3 L2"
+horizontal_alignment = 1
+
+[node name="R3 L3" type="Label" parent="Map/2"]
+offset_left = -1158.94
+offset_top = -613.882
+offset_right = -699.941
+offset_bottom = -488.882
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "R3 L3"
+horizontal_alignment = 1
+
+[node name="S2" type="Label" parent="Map/2"]
+offset_left = -982.471
+offset_top = -708.0
+offset_right = -523.471
+offset_bottom = -583.0
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "Sorte"
+horizontal_alignment = 1
+
+[node name="R4 L1" type="Label" parent="Map/2"]
+offset_left = -806.0
+offset_top = -802.118
+offset_right = -347.0
+offset_bottom = -677.118
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "R4 L1"
+horizontal_alignment = 1
+
+[node name="R4 L2" type="Label" parent="Map/2"]
+offset_left = -617.765
+offset_top = -896.235
+offset_right = -158.765
+offset_bottom = -771.235
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "R4 L2"
+horizontal_alignment = 1
+
+[node name="R3 L1D" type="Label" parent="Map/2"]
+offset_left = -1570.71
+offset_top = -469.19
+offset_right = -1111.71
+offset_bottom = -344.19
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "nenhum"
+horizontal_alignment = 1
+
+[node name="R3 L2D" type="Label" parent="Map/2"]
+offset_left = -1370.71
+offset_top = -575.073
+offset_right = -911.706
+offset_bottom = -450.073
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "nenhum"
+horizontal_alignment = 1
+
+[node name="R3 L3D" type="Label" parent="Map/2"]
+offset_left = -1194.24
+offset_top = -669.19
+offset_right = -735.235
+offset_bottom = -544.19
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "nenhum"
+horizontal_alignment = 1
+
+[node name="R4 L1D" type="Label" parent="Map/2"]
+offset_left = -853.059
+offset_top = -845.661
+offset_right = -394.059
+offset_bottom = -720.661
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "nenhum"
+horizontal_alignment = 1
+
+[node name="R4 L2D" type="Label" parent="Map/2"]
+offset_left = -653.059
+offset_top = -951.543
+offset_right = -194.059
+offset_bottom = -826.543
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "nenhum"
+horizontal_alignment = 1
+
+[node name="R3 L1A" type="Label" parent="Map/2"]
+offset_left = -1594.24
+offset_top = -508.0
+offset_right = -1135.24
+offset_bottom = -383.0
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "$0"
+horizontal_alignment = 1
+
+[node name="R3 L2A" type="Label" parent="Map/2"]
+offset_left = -1406.0
+offset_top = -613.882
+offset_right = -947.0
+offset_bottom = -488.882
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "$0"
+horizontal_alignment = 1
+
+[node name="R3 L3A" type="Label" parent="Map/2"]
+offset_left = -1229.53
+offset_top = -708.0
+offset_right = -770.53
+offset_bottom = -583.0
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "$0"
+horizontal_alignment = 1
+
+[node name="R4 L1A" type="Label" parent="Map/2"]
+offset_left = -888.353
+offset_top = -880.955
+offset_right = -429.353
+offset_bottom = -755.955
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "$0"
+horizontal_alignment = 1
+
+[node name="R4 L2A" type="Label" parent="Map/2"]
+offset_left = -700.118
+offset_top = -986.837
+offset_right = -241.118
+offset_bottom = -861.837
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "$0"
+horizontal_alignment = 1
+
+[node name="R3 L2C" type="Label" parent="Map/2"]
+offset_left = -1429.53
+offset_top = -669.19
+offset_right = -970.529
+offset_bottom = -544.19
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "0"
+horizontal_alignment = 1
+
+[node name="R3 L1C" type="Label" parent="Map/2"]
+offset_left = -1617.76
+offset_top = -578.588
+offset_right = -1158.76
+offset_bottom = -453.588
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "0"
+horizontal_alignment = 1
+
+[node name="R3 L3C" type="Label" parent="Map/2"]
+offset_left = -1253.06
+offset_top = -763.308
+offset_right = -794.059
+offset_bottom = -638.308
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "0"
+horizontal_alignment = 1
+
+[node name="R4 L1C" type="Label" parent="Map/2"]
+offset_left = -900.117
+offset_top = -951.543
+offset_right = -441.117
+offset_bottom = -826.543
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "0"
+horizontal_alignment = 1
+
+[node name="R4 L2C" type="Label" parent="Map/2"]
+offset_left = -711.882
+offset_top = -1049.18
+offset_right = -252.882
+offset_bottom = -924.177
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "0"
+horizontal_alignment = 1
+
+[node name="3" type="CanvasGroup" parent="Map"]
+position = Vector2(994, 456.706)
+rotation = 0.977384
+
+[node name="R5 L1" type="Label" parent="Map/3"]
+offset_left = -1535.41
+offset_top = -413.882
+offset_right = -1076.41
+offset_bottom = -288.882
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "R5 L1"
+horizontal_alignment = 1
+
+[node name="R5 L2" type="Label" parent="Map/3"]
+offset_left = -1335.41
+offset_top = -519.765
+offset_right = -876.412
+offset_bottom = -394.765
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "R5 L2"
+horizontal_alignment = 1
+
+[node name="R5 L3" type="Label" parent="Map/3"]
+offset_left = -1158.94
+offset_top = -613.882
+offset_right = -699.941
+offset_bottom = -488.882
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "R5 L3"
+horizontal_alignment = 1
+
+[node name="S3" type="Label" parent="Map/3"]
+offset_left = -982.471
+offset_top = -708.0
+offset_right = -523.471
+offset_bottom = -583.0
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "Sorte"
+horizontal_alignment = 1
+
+[node name="R6 L1" type="Label" parent="Map/3"]
+offset_left = -806.0
+offset_top = -802.118
+offset_right = -347.0
+offset_bottom = -677.118
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "R6 L1"
+horizontal_alignment = 1
+
+[node name="R6 L2" type="Label" parent="Map/3"]
+offset_left = -617.765
+offset_top = -896.235
+offset_right = -158.765
+offset_bottom = -771.235
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "R6 L2"
+horizontal_alignment = 1
+
+[node name="R5 L1D" type="Label" parent="Map/3"]
+offset_left = -1570.71
+offset_top = -469.19
+offset_right = -1111.71
+offset_bottom = -344.19
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "nenhum"
+horizontal_alignment = 1
+
+[node name="R5 L2D" type="Label" parent="Map/3"]
+offset_left = -1370.71
+offset_top = -575.073
+offset_right = -911.706
+offset_bottom = -450.073
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "nenhum"
+horizontal_alignment = 1
+
+[node name="R5 L3D" type="Label" parent="Map/3"]
+offset_left = -1194.24
+offset_top = -669.19
+offset_right = -735.235
+offset_bottom = -544.19
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "nenhum"
+horizontal_alignment = 1
+
+[node name="R6 L1D" type="Label" parent="Map/3"]
+offset_left = -853.059
+offset_top = -845.661
+offset_right = -394.059
+offset_bottom = -720.661
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "nenhum"
+horizontal_alignment = 1
+
+[node name="R6 L2D" type="Label" parent="Map/3"]
+offset_left = -653.059
+offset_top = -951.543
+offset_right = -194.059
+offset_bottom = -826.543
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "nenhum"
+horizontal_alignment = 1
+
+[node name="R5 L1A" type="Label" parent="Map/3"]
+offset_left = -1594.24
+offset_top = -508.0
+offset_right = -1135.24
+offset_bottom = -383.0
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "$0"
+horizontal_alignment = 1
+
+[node name="R5 L2A" type="Label" parent="Map/3"]
+offset_left = -1406.0
+offset_top = -613.882
+offset_right = -947.0
+offset_bottom = -488.882
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "$0"
+horizontal_alignment = 1
+
+[node name="R5 L3A" type="Label" parent="Map/3"]
+offset_left = -1229.53
+offset_top = -708.0
+offset_right = -770.53
+offset_bottom = -583.0
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "$0"
+horizontal_alignment = 1
+
+[node name="R6 L1A" type="Label" parent="Map/3"]
+offset_left = -888.353
+offset_top = -880.955
+offset_right = -429.353
+offset_bottom = -755.955
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "$0"
+horizontal_alignment = 1
+
+[node name="R6 L2A" type="Label" parent="Map/3"]
+offset_left = -700.118
+offset_top = -986.837
+offset_right = -241.118
+offset_bottom = -861.837
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "$0"
+horizontal_alignment = 1
+
+[node name="R5 L1C" type="Label" parent="Map/3"]
+offset_left = -1636.74
+offset_top = -560.938
+offset_right = -1177.74
+offset_bottom = -435.938
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "0"
+horizontal_alignment = 1
+
+[node name="R5 L2C" type="Label" parent="Map/3"]
+offset_left = -1436.74
+offset_top = -666.821
+offset_right = -977.735
+offset_bottom = -541.821
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "0"
+horizontal_alignment = 1
+
+[node name="R5 L3C" type="Label" parent="Map/3"]
+offset_left = -1260.27
+offset_top = -760.938
+offset_right = -801.265
+offset_bottom = -635.938
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "0"
+horizontal_alignment = 1
+
+[node name="R6 L1C" type="Label" parent="Map/3"]
+offset_left = -907.324
+offset_top = -949.174
+offset_right = -448.324
+offset_bottom = -824.174
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "0"
+horizontal_alignment = 1
+
+[node name="R6 L2C" type="Label" parent="Map/3"]
+offset_left = -741.449
+offset_top = -1067.75
+offset_right = -282.449
+offset_bottom = -942.745
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "0"
+horizontal_alignment = 1
+
+[node name="1" type="CanvasGroup" parent="Map"]
+position = Vector2(-1041.29, 1727.29)
+rotation = 0.977384
+
+[node name="R2 L3" type="Label" parent="Map/1"]
+offset_left = -1535.41
+offset_top = -413.882
+offset_right = -1076.41
+offset_bottom = -288.882
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "R2 L3"
+horizontal_alignment = 1
+
+[node name="R2 L2" type="Label" parent="Map/1"]
+offset_left = -1335.41
+offset_top = -519.765
+offset_right = -876.412
+offset_bottom = -394.765
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "R2 L2"
+horizontal_alignment = 1
+
+[node name="R2 L1" type="Label" parent="Map/1"]
+offset_left = -1158.94
+offset_top = -613.882
+offset_right = -699.941
+offset_bottom = -488.882
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "R2 L1"
+horizontal_alignment = 1
+
+[node name="S1" type="Label" parent="Map/1"]
+offset_left = -982.471
+offset_top = -708.0
+offset_right = -523.471
+offset_bottom = -583.0
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "Sorte"
+horizontal_alignment = 1
+
+[node name="R1 L2" type="Label" parent="Map/1"]
+offset_left = -806.0
+offset_top = -802.118
+offset_right = -347.0
+offset_bottom = -677.118
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "R1 L2"
+horizontal_alignment = 1
+
+[node name="R1 L1" type="Label" parent="Map/1"]
+offset_left = -617.765
+offset_top = -896.235
+offset_right = -158.765
+offset_bottom = -771.235
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "R1 L1"
+horizontal_alignment = 1
+
+[node name="R2 L3D" type="Label" parent="Map/1"]
+offset_left = -1570.71
+offset_top = -469.19
+offset_right = -1111.71
+offset_bottom = -344.19
+rotation = -0.523598
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "nenhum"
+horizontal_alignment = 1
+
+[node name="R2 L2D" type="Label" parent="Map/1"]
+offset_left = -1370.71
+offset_top = -575.073
+offset_right = -911.706
+offset_bottom = -450.073
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "nenhum"
+horizontal_alignment = 1
+
+[node name="R2 L1D" type="Label" parent="Map/1"]
+offset_left = -1194.24
+offset_top = -669.19
+offset_right = -735.235
+offset_bottom = -544.19
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "nenhum"
+horizontal_alignment = 1
+
+[node name="R1 L2D" type="Label" parent="Map/1"]
+offset_left = -853.059
+offset_top = -845.661
+offset_right = -394.059
+offset_bottom = -720.661
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "nenhum"
+horizontal_alignment = 1
+
+[node name="R1 L1D" type="Label" parent="Map/1"]
+offset_left = -653.059
+offset_top = -951.543
+offset_right = -194.059
+offset_bottom = -826.543
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "nenhum"
+horizontal_alignment = 1
+
+[node name="R2 L3A" type="Label" parent="Map/1"]
+offset_left = -1594.24
+offset_top = -508.0
+offset_right = -1135.24
+offset_bottom = -383.0
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "$0"
+horizontal_alignment = 1
+
+[node name="R2 L2A" type="Label" parent="Map/1"]
+offset_left = -1406.0
+offset_top = -613.882
+offset_right = -947.0
+offset_bottom = -488.882
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "$0"
+horizontal_alignment = 1
+
+[node name="R2 L1A" type="Label" parent="Map/1"]
+offset_left = -1229.53
+offset_top = -708.0
+offset_right = -770.53
+offset_bottom = -583.0
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "$0"
+horizontal_alignment = 1
+
+[node name="R1 L2A" type="Label" parent="Map/1"]
+offset_left = -888.353
+offset_top = -880.955
+offset_right = -429.353
+offset_bottom = -755.955
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "$0"
+horizontal_alignment = 1
+
+[node name="R1 L1A" type="Label" parent="Map/1"]
+offset_left = -700.118
+offset_top = -986.837
+offset_right = -241.118
+offset_bottom = -861.837
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "$0"
+horizontal_alignment = 1
+
+[node name="R2 L3C" type="Label" parent="Map/1"]
+offset_left = -1502.29
+offset_top = -360.529
+offset_right = -1043.29
+offset_bottom = -235.529
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "0"
+horizontal_alignment = 1
+
+[node name="R2 L2C" type="Label" parent="Map/1"]
+offset_left = -1313.8
+offset_top = -470.376
+offset_right = -854.804
+offset_bottom = -345.376
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "0"
+horizontal_alignment = 1
+
+[node name="R2 L1C" type="Label" parent="Map/1"]
+offset_left = -1125.96
+offset_top = -560.799
+offset_right = -666.961
+offset_bottom = -435.799
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "0"
+horizontal_alignment = 1
+
+[node name="R1 L2C" type="Label" parent="Map/1"]
+offset_left = -784.392
+offset_top = -752.729
+offset_right = -325.392
+offset_bottom = -627.729
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "0"
+horizontal_alignment = 1
+
+[node name="R1 L1C" type="Label" parent="Map/1"]
+offset_left = -596.157
+offset_top = -846.847
+offset_right = -137.157
+offset_bottom = -721.847
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "0"
+horizontal_alignment = 1
+
+[node name="4" type="CanvasGroup" parent="Map"]
+position = Vector2(2088.12, 1244.94)
+
+[node name="R8 L3" type="Label" parent="Map/4"]
+offset_left = -1535.41
+offset_top = -413.882
+offset_right = -1076.41
+offset_bottom = -288.882
+rotation = -0.523598
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "R8 L3"
+horizontal_alignment = 1
+
+[node name="R8 L2" type="Label" parent="Map/4"]
+offset_left = -1335.41
+offset_top = -519.765
+offset_right = -876.412
+offset_bottom = -394.765
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "R8 L2"
+horizontal_alignment = 1
+
+[node name="R8 L1" type="Label" parent="Map/4"]
+offset_left = -1158.94
+offset_top = -613.882
+offset_right = -699.941
+offset_bottom = -488.882
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "R8 L1"
+horizontal_alignment = 1
+
+[node name="S4" type="Label" parent="Map/4"]
+offset_left = -982.471
+offset_top = -708.0
+offset_right = -523.471
+offset_bottom = -583.0
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "Sorte"
+horizontal_alignment = 1
+
+[node name="R7 L2" type="Label" parent="Map/4"]
+offset_left = -806.0
+offset_top = -802.118
+offset_right = -347.0
+offset_bottom = -677.118
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "R7 L2"
+horizontal_alignment = 1
+
+[node name="R7 L1" type="Label" parent="Map/4"]
+offset_left = -617.765
+offset_top = -896.235
+offset_right = -158.765
+offset_bottom = -771.235
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "R7 L1"
+horizontal_alignment = 1
+
+[node name="R8 L3D" type="Label" parent="Map/4"]
+offset_left = -1570.71
+offset_top = -469.19
+offset_right = -1111.71
+offset_bottom = -344.19
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "nenhum"
+horizontal_alignment = 1
+
+[node name="R8 L2D" type="Label" parent="Map/4"]
+offset_left = -1370.71
+offset_top = -575.073
+offset_right = -911.706
+offset_bottom = -450.073
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "nenhum"
+horizontal_alignment = 1
+
+[node name="R8 L1D" type="Label" parent="Map/4"]
+offset_left = -1194.24
+offset_top = -669.19
+offset_right = -735.235
+offset_bottom = -544.19
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "nenhum"
+horizontal_alignment = 1
+
+[node name="R7 L2D" type="Label" parent="Map/4"]
+offset_left = -853.059
+offset_top = -845.661
+offset_right = -394.059
+offset_bottom = -720.661
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "nenhum"
+horizontal_alignment = 1
+
+[node name="R7 L1D" type="Label" parent="Map/4"]
+offset_left = -653.059
+offset_top = -951.543
+offset_right = -194.059
+offset_bottom = -826.543
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "nenhum"
+horizontal_alignment = 1
+
+[node name="R8 L3A" type="Label" parent="Map/4"]
+offset_left = -1594.24
+offset_top = -508.0
+offset_right = -1135.24
+offset_bottom = -383.0
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "$0"
+horizontal_alignment = 1
+
+[node name="R8 L2A" type="Label" parent="Map/4"]
+offset_left = -1406.0
+offset_top = -613.882
+offset_right = -947.0
+offset_bottom = -488.882
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "$0"
+horizontal_alignment = 1
+
+[node name="R8 L1A" type="Label" parent="Map/4"]
+offset_left = -1229.53
+offset_top = -708.0
+offset_right = -770.53
+offset_bottom = -583.0
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "$0"
+horizontal_alignment = 1
+
+[node name="R7 L2A" type="Label" parent="Map/4"]
+offset_left = -888.353
+offset_top = -880.955
+offset_right = -429.353
+offset_bottom = -755.955
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "$0"
+horizontal_alignment = 1
+
+[node name="R7 L1A" type="Label" parent="Map/4"]
+offset_left = -700.118
+offset_top = -986.837
+offset_right = -241.118
+offset_bottom = -861.837
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 71
+text = "$0"
+horizontal_alignment = 1
+
+[node name="R8 L3C" type="Label" parent="Map/4"]
+offset_left = -1494.12
+offset_top = -361.19
+offset_right = -1035.12
+offset_bottom = -236.19
+rotation = -0.523598
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "0"
+horizontal_alignment = 1
+
+[node name="R8 L2C" type="Label" parent="Map/4"]
+offset_left = -1294.12
+offset_top = -467.072
+offset_right = -835.117
+offset_bottom = -342.072
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "0"
+horizontal_alignment = 1
+
+[node name="R8 L1C" type="Label" parent="Map/4"]
+offset_left = -1117.65
+offset_top = -561.19
+offset_right = -658.647
+offset_bottom = -436.19
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "0"
+horizontal_alignment = 1
+
+[node name="R7 L2C" type="Label" parent="Map/4"]
+offset_left = -764.705
+offset_top = -749.425
+offset_right = -305.705
+offset_bottom = -624.425
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "0"
+horizontal_alignment = 1
+
+[node name="R7 L1C" type="Label" parent="Map/4"]
+offset_left = -576.47
+offset_top = -843.543
+offset_right = -117.47
+offset_bottom = -718.543
+rotation = -0.495674
+scale = Vector2(0.555, 0.555)
+theme_override_font_sizes/font_size = 91
+text = "0"
+horizontal_alignment = 1
+
+[node name="P1Money" type="Label" parent="."]
+unique_name_in_owner = true
+visible = false
+offset_left = -50.0
+offset_top = -61.0
+offset_right = -11.0
+offset_bottom = -44.0
+theme_override_font_sizes/font_size = 9
+text = "$500000"
+
+[node name="P1" type="Label" parent="."]
+visible = false
+offset_left = -49.0
+offset_top = -75.0
+offset_right = -2.0
+offset_bottom = -58.0
+theme_override_font_sizes/font_size = 12
+text = "player 1"
+
+[node name="Dice" type="Button" parent="."]
+unique_name_in_owner = true
+texture_filter = 1
+offset_left = 105.0
+offset_top = 23.0
+offset_right = 151.0
+offset_bottom = 42.0
+focus_mode = 0
+theme_override_font_sizes/font_size = 7
+text = "Rolar Dado"
+
+[node name="DiceLabel" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = 105.0
+offset_right = 152.0
+offset_bottom = 23.0
+text = "0"
+horizontal_alignment = 1
+
+[node name="P1Gain" type="Label" parent="."]
+unique_name_in_owner = true
+visible = false
+offset_left = -50.0
+offset_top = -51.0
+offset_right = -11.0
+offset_bottom = -34.0
+theme_override_font_sizes/font_size = 9
+text = "+$0"
+
+[node name="P2" type="Label" parent="."]
+visible = false
+offset_left = 262.0
+offset_top = -74.0
+offset_right = 309.0
+offset_bottom = -57.0
+theme_override_font_sizes/font_size = 12
+text = "player 1"
+horizontal_alignment = 2
+
+[node name="P2Money" type="Label" parent="."]
+visible = false
+offset_left = 268.0
+offset_top = -55.0
+offset_right = 307.0
+offset_bottom = -38.0
+theme_override_font_sizes/font_size = 9
+text = "$500000"
+horizontal_alignment = 2
+
+[node name="P2Gain" type="Label" parent="."]
+visible = false
+offset_left = 268.0
+offset_top = -45.0
+offset_right = 307.0
+offset_bottom = -28.0
+theme_override_font_sizes/font_size = 9
+text = "+$0"
+horizontal_alignment = 2
+
+[node name="P3Money" type="Label" parent="."]
+unique_name_in_owner = true
+visible = false
+offset_left = -49.0
+offset_top = 94.0
+offset_right = -10.0
+offset_bottom = 111.0
+theme_override_font_sizes/font_size = 9
+text = "$500000"
+
+[node name="P3Gain" type="Label" parent="."]
+unique_name_in_owner = true
+visible = false
+offset_left = -49.0
+offset_top = 82.0
+offset_right = -10.0
+offset_bottom = 99.0
+theme_override_font_sizes/font_size = 9
+text = "+$0"
+
+[node name="P3" type="Label" parent="."]
+visible = false
+offset_left = -48.0
+offset_top = 105.0
+offset_right = -1.0
+offset_bottom = 122.0
+theme_override_font_sizes/font_size = 12
+text = "player 1"
+
+[node name="P4Money" type="Label" parent="."]
+visible = false
+offset_left = 266.0
+offset_top = 95.0
+offset_right = 305.0
+offset_bottom = 112.0
+theme_override_font_sizes/font_size = 9
+text = "$500000"
+horizontal_alignment = 2
+
+[node name="P4Gain" type="Label" parent="."]
+visible = false
+offset_left = 266.0
+offset_top = 83.0
+offset_right = 305.0
+offset_bottom = 100.0
+theme_override_font_sizes/font_size = 9
+text = "+$0"
+horizontal_alignment = 2
+
+[node name="P4" type="Label" parent="."]
+visible = false
+offset_left = 258.0
+offset_top = 107.0
+offset_right = 305.0
+offset_bottom = 124.0
+theme_override_font_sizes/font_size = 12
+text = "player 1"
+horizontal_alignment = 2
+
+[node name="Window" type="Window" parent="."]
+sdf_scale = 0
+position = Vector2i(-270, 0)
+size = Vector2i(600, 400)
+visible = false
+min_size = Vector2i(600, 400)
+max_size = Vector2i(600, 400)
+script = ExtResource("5_uw67m")
+
+[node name="Label" type="Label" parent="Window"]
+offset_left = 200.04
+offset_top = 16.17
+offset_right = 376.41
+offset_bottom = 86.715
+theme_override_font_sizes/font_size = 46
+text = "aaaaaa"
+horizontal_alignment = 1
+
+[node name="comprar" type="Button" parent="Window"]
+unique_name_in_owner = true
+texture_filter = 1
+offset_left = 77.48
+offset_top = 267.925
+offset_right = 253.85
+offset_bottom = 338.47
+focus_mode = 0
+theme_override_font_sizes/font_size = 46
+text = "sim"
+
+[node name="nao_comprar" type="Button" parent="Window"]
+unique_name_in_owner = true
+texture_filter = 1
+offset_left = 330.985
+offset_top = 266.91
+offset_right = 507.355
+offset_bottom = 337.455
+focus_mode = 0
+theme_override_font_sizes/font_size = 46
+text = "não"
+
+[node name="Victory" type="Window" parent="."]
+auto_translate_mode = 1
+sdf_scale = 0
+position = Vector2i(-270, 0)
+size = Vector2i(600, 400)
+visible = false
+min_size = Vector2i(600, 400)
+max_size = Vector2i(600, 400)
+script = ExtResource("5_uw67m")
+
+[node name="1" type="Label" parent="Victory"]
+offset_left = 207.525
+offset_top = 16.17
+offset_right = 383.895
+offset_bottom = 86.715
+theme_override_font_sizes/font_size = 46
+text = "aaaaaa"
+horizontal_alignment = 1
+
+[node name="2" type="Label" parent="Victory"]
+offset_left = 207.525
+offset_top = 74.745
+offset_right = 383.895
+offset_bottom = 145.29
+theme_override_font_sizes/font_size = 46
+text = "aaaaaa"
+horizontal_alignment = 1
+
+[node name="3" type="Label" parent="Victory"]
+offset_left = 207.525
+offset_top = 135.36
+offset_right = 383.895
+offset_bottom = 205.905
+theme_override_font_sizes/font_size = 46
+text = "aaaaaa"
+horizontal_alignment = 1
+
+[node name="4" type="Label" parent="Victory"]
+offset_left = 207.525
+offset_top = 196.715
+offset_right = 383.895
+offset_bottom = 267.26
+theme_override_font_sizes/font_size = 46
+text = "aaaaaa"
+horizontal_alignment = 1
+
+[node name="disconnect_button" type="Button" parent="Victory"]
+texture_filter = 1
+offset_left = 210.3
+offset_top = 292.45
+offset_right = 386.67
+offset_bottom = 364.45
+focus_mode = 0
+theme_override_font_sizes/font_size = 46
+text = "Menu"
+
+[node name="Minigame" type="Window" parent="."]
+auto_translate_mode = 1
+sdf_scale = 0
+position = Vector2i(-270, 0)
+size = Vector2i(600, 400)
+visible = false
+min_size = Vector2i(600, 400)
+max_size = Vector2i(600, 400)
+script = ExtResource("5_uw67m")
+
+[node name="Sprite2D" type="Sprite2D" parent="Minigame"]
+position = Vector2(284.225, 149.195)
+texture = ExtResource("5_5uc73")
+
+[node name="shoot_button" type="Button" parent="Minigame"]
+texture_filter = 1
+offset_left = 210.3
+offset_top = 292.45
+offset_right = 386.67
+offset_bottom = 364.45
+focus_mode = 0
+theme_override_font_sizes/font_size = 46
+text = "Atirar"
+
+[node name="Minigame_Winner" type="Window" parent="."]
+auto_translate_mode = 1
+sdf_scale = 0
+position = Vector2i(-270, 0)
+size = Vector2i(600, 400)
+visible = false
+min_size = Vector2i(600, 400)
+max_size = Vector2i(600, 400)
+script = ExtResource("5_uw67m")
+
+[node name="Label" type="Label" parent="Minigame_Winner"]
+offset_left = 207.525
+offset_top = 91.13
+offset_right = 383.895
+offset_bottom = 161.675
+theme_override_font_sizes/font_size = 46
+text = "aaaaaa"
+horizontal_alignment = 1
+
+[node name="c_button" type="Button" parent="Minigame_Winner"]
+texture_filter = 1
+offset_left = 210.3
+offset_top = 292.45
+offset_right = 386.67
+offset_bottom = 364.45
+focus_mode = 0
+theme_override_font_sizes/font_size = 46
+text = "Fechar"
+
+[connection signal="pressed" from="Dice" to="TileMap" method="_on_dice_pressed"]
+[connection signal="pressed" from="Victory/disconnect_button" to="TileMap" method="_on_disconnect_button_pressed"]
+[connection signal="pressed" from="Minigame/shoot_button" to="Minigame" method="_on_shoot_button_pressed"]
+[connection signal="pressed" from="Minigame_Winner/c_button" to="Minigame_Winner" method="_on_shoot_button_pressed"]

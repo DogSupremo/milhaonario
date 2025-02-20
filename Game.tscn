@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://diegr72y6bad0"]
+
+[node name="Game" type="Node"]
+
+[node name="World" type="Node2D" parent="."]
+
+[node name="Grid" type="TileMap" parent="World"]
+format = 2
+
+[node name="YSort" type="Node2D" parent="World/Grid"]
